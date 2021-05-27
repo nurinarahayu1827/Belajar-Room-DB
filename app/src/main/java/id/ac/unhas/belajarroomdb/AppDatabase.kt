@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.internal.synchronized
 
-@Database(entities = [ContactsContract.CommonDataKinds.Note::class], exportSchema = false, version = 1)
+@Database(entities = [Note::class], exportSchema = false, version = 1)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun noteDao(): NoteDao
 
